@@ -11,5 +11,8 @@ Rails.application.routes.draw do
   resources :authors do
     resources :books
   end
+
+  resources :employees, path_names: { new: 'hire'}
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
